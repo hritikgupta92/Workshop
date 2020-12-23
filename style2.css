@@ -13,16 +13,19 @@ background-color: black;
     height:60vh;
     background:linear-gradient(#33ccff,#ff0066);
     border-radius: 50%;
-    animation:animate 0.5s linear infinte;
+    animation:animate 0.5s linear infinite;
 }
-@keyframes animate{
-    from{
-     transform: rotate(0deg);
+
+    @keyframes animate
+    {
+        from{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
-    to{
-         transform:rotate(360deg);
-    }
-}
+
 .circle:after{
     content:'';
     position: absolute;
